@@ -249,7 +249,7 @@ class Drupal8 extends AbstractCore implements CoreAuthenticationInterface {
    * {@inheritdoc}
    */
   public function userDelete(\stdClass $user) {
-    user_cancel([], $user->uid, 'user_cancel_delete');
+    user_cancel([], $user->uid, 'user_cancel_reassign');
   }
 
   /**
